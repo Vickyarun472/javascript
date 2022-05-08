@@ -1,0 +1,15 @@
+* {
+    background-color: rgb(171, 30, 129);
+}
+
+    .heading *{
+        background-color: rgb(34, 0, 255);
+        margin:auto;
+        margin-top:5%;
+    }
+    .sub{
+        background-color: white;
+    }
+    #demo{
+        font-size: medium;
+    }

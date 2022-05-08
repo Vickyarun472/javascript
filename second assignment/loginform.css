@@ -1,0 +1,17 @@
+* {
+    background-color: rgba(166, 71, 7, 0.942);
+}
+
+.heading * {
+
+    background-color: red;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.sub {
+    background-color: white;
+}
+
+#demo {
+    background-color: rgb(13, 199, 78);

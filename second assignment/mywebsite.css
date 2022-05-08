@@ -1,0 +1,10 @@
+* {
+    background-color: rgb(91, 89, 87);
+
+}
+.sub{
+    width: 250px;
+    height: 40px;
+    border: 2px solid rgb(243, 241, 238);
+    padding: 10px;
+}

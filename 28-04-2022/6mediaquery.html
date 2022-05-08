@@ -1,0 +1,46 @@
+<html>
+    <head>
+    </head>
+    <style>
+    .box{
+          width: 400px;
+          height:200px;
+          background-color: blue;
+          margin:20px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    @media screen and (min-width:48px) {
+        .grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    }
+    @media screen and (min-width:768px) {
+        .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    }
+    @media screen and (min-width:992px) {
+        .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    }
+ 
+    </style>
+    <body>
+        <div class="grid">
+            <p class="box"></p>
+            <p class="box"></p>
+            <p class="box"></p>
+            <p class="box"></p>
+        </div>
+       
+   
+   
+    </body>
+</html>
