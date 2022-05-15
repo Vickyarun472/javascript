@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>average</title>
+</head>
+
+<body>
+    salman team score= 89, 120 and 103</br>
+    mike team score= 116, 94 and 123</br>
+    mary team score= 97, 134 and 105</br>
+    average of salman's team=<span id="salmanavg"></span></br>
+    average of mike's team=<span id="mikeavg"></span></br>
+    average of mary's team=<span id="maryavg"></span></br>
+    <button onclick="avg()">Calculate Average</button></br>
+    <button onclick="winner()">Winner</button>
+</body>
+
+</html>
+<script>
+    function avg() {
+        salmanavg = Number(salmanavg);
+        mikeavg = Number(mikeavg);
+        maryavg = Number(maryavg);
+
+        var salmanavg = (89 + 120 + 103) / 3;
+        var mikeavg = (116 + 94 + 123) / 3;
+        var maryavg = (97 + 134 + 105) / 3;
+
+        document.getElementById("salmanavg").innerHTML = salmanavg;
+        document.getElementById("mikeavg").innerHTML = mikeavg;
+        document.getElementById("maryavg").innerHTML = maryavg;
+    }
+    function winner() {
+        if (salmanavg > mikeavg && salmanavg > maryavg)
+            console.log('Salman team is winning', salmanavg);
+        else if (mikeavg > salmanavg && mikeavg > maryavg)
+            console.log('Mike team is winning', mikeavg);
+        else if (maryavg > salmanavg && maryavg > mikeavg)
+            console.log('Mary team is winning', maryavg);
+        else if (salmanavg === mikeavg === maryavg)
+            console.log('The match is tied');
+        else
+            console.log('Mary Team is the winner', maryavg);
+    }
+</script>

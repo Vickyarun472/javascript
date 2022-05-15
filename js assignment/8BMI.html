@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>BMI</title>
+</head>
+
+<body>
+    HarryMass: <input type="text" id="harryMass"><br/>
+    HarryHeight: <input type="text" id="harryHeight"><br/>
+    <button onclick="bmi()">Calculate BMI</button><br/>
+    bmiharry:<span id="bmi1"></span><br/><br/>
+    SalmanMass: <input type="text" id="salmanMass"><br/>
+    SalmanHeight: <input type="text" id="salmanHeight"><br/>
+    <button onclick="bmi()">Calculate BMI</button><br/>
+    bmisalman:<span id="bmi2"></span>
+</body>
+
+</html>
+<script>
+    function bmi() {
+        var massharry;
+        var heightharry;
+        var masssalman;
+        var heightsalman;
+
+        massharry = document.getElementById("harryMass").value
+        heightharry = document.getElementById("harryHeight").value;
+        masssalman = document.getElementById("salmanMass").value;
+        heightsalman = document.getElementById("salmanHeight").value;
+
+        massharry = Number(massharry);
+        heightharry = Number(heightharry);
+        masssalamn = Number(masssalman);
+        heightsalman = Number(heightsalman);
+
+        var harryBMI = massharry / (heightharry * heightharry);
+        harryBMI = Number(harryBMI);
+        document.getElementById("bmi1").innerHTML = harryBMI;
+
+        var salmanBMI = masssalman / (heightsalman * heightsalman);
+        salmanBMI = Number(salmanBMI);
+        document.getElementById("bmi2").innerHTML = salmanBMI;
+
+        var i=Boolean (harryBMI > salmanBMI);
+
+        if (i===true) 
+            console.log("Is Harry's BMI higher than Salman's?",i);
+        else 
+            console.log("Is Harry's BMI higher than Salman's?",i);
+        
+    }
+</script>
