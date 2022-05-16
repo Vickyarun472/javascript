@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>anagram</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var str1 = "salman";
+    var str2 = "name";
+    var lenga = str1.length;
+    var lengb = str2.length;
+    if (lenga != lengb) {
+        console.log("Invalid string");
+    }
+    var sortedstr1 = str1.split("").sort().join("");
+    var sortedstr2 = str2.split("").sort().join("");
+    console.log("first string=" + str1, "Second string=" + str2);
+    console.log("Sorted first string=" + sortedstr1, "Sorted second string=" + sortedstr2);
+    if (sortedstr1 === sortedstr2) {
+        console.log("These strings are Anagrams");
+    }
+    else {
+        console.log("These strings are not Anagrams");
+
+    }
+</script>
+
+</html>

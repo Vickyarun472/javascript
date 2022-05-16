@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>highest no. of char</title>
+    </head>
+    <body>
+        
+    </body>
+</html>
+<script>   
+    var str = "programming is great";
+    var count={};
+    var high_count='';
+    console.log(str);
+    for(var i=0;i<str.length;i++)
+    {
+        var value=str[i];
+        if(!count[value])
+        {
+            count[value]=0;
+        }
+        count[value]++;
+        if(high_count=='' || count[value] > count[high_count])
+        {
+            high_count=value;
+        }
+    }
+    console.log(high_count +":"+ count[high_count]);    
+     
+</script>
