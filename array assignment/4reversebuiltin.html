@@ -1,13 +1,19 @@
 <html>
-    <head>
-        <title>reversebuiltin</title>
-    </head>
-    <body>
 
-    </body>
-    <script>
-         var result =[33,44,11,33,44,555,11,11,45];
-         var reverseOrder = result.reverse();
-         console.log(reverseOrder);
-    </script>
+<head>
+    <title>reverse with builtin</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var no = [33, 44, 11, 33, 44, 555, 11, 11, 45];
+
+    var reverseorder = no.reverse(function (a, b) {
+        return b - a;
+    });
+    console.log(reverseorder);
+</script>
+
 </html>
